@@ -1,0 +1,47 @@
+#productShowcase {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  transition: all 0.3s ease-in-out;
+}
+
+#productCount {
+  font-size: xxx-large;
+  text-align: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  height: 25rem;
+}
+
+.product-thumb-img {
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.product-variations-img {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.product-price {
+  font-weight: bold;
+  color: green;
+}
+
+.product-price.discount {
+  color: red;
+  text-decoration: line-through;
+}
+
+.product-button {
+  border: none;
+}
